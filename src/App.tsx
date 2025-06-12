@@ -95,7 +95,7 @@ function App() {
           
           <div className="border-t border-gray-800 pt-8 mt-8 text-center text-gray-400">
             <p>
-              © 2024 TuniLegal AI. {currentLanguage === 'ar' ? 'جميع الحقوق محفوظة' : 
+              © 2025 TuniLegal AI. {currentLanguage === 'ar' ? 'جميع الحقوق محفوظة' : 
                                    currentLanguage === 'fr' ? 'Tous droits réservés' : 
                                    'All rights reserved'}.
             </p>
