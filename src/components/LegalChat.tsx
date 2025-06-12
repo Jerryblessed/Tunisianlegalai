@@ -21,7 +21,7 @@ interface LegalChatProps {
 // and make API calls from a secure backend server.
 const AZURE_OPENAI_BASE = "https://thisisoajo.openai.azure.com";
 const AZURE_OPENAI_MODEL = "gpt-4o";
-const AZURE_OPENAI_KEY = "YOUR_API_KEY_FROM_ENVIRONMENT_VARIABLE"; // Replace this
+const AZURE_OPENAI_KEY = 9I4UEJweVUdih04Uv8AXcAxs5H8jSQRfwaugcSQYHcI882wSpFvqJQQJ99BAACL93NaXJ3w3AAABACOGkv4f"; // Replace this
 const AZURE_OPENAI_VERSION = "2023-06-01-preview";
 
 const LegalChat: React.FC<LegalChatProps> = ({ language }) => {
