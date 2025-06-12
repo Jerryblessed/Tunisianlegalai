@@ -2,7 +2,10 @@ import React, { useState, useRef } from 'react';
 import { Upload, FileText, X, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { UploadedDocument } from '../types';
 import pdfWorker from 'pdfjs-dist/legacy/build/pdf.worker.js';
-pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorker;
+import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf';
+
+// Worker file is served at /pdf.worker.js
+pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.js';
 
 interface DocumentUploadProps {
   language: 'en' | 'fr' | 'ar';
