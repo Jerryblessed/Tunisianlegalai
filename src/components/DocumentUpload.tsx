@@ -310,4 +310,4 @@ const DocumentUpload: React.FC<DocumentUploadProps> = ({ language }) => {
   );
 };
 
-export default DocumentUpload;'
+export default DocumentUpload;
