@@ -1,7 +1,13 @@
 import React, { useState, useRef } from 'react';
 import { Upload, FileText, X, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { UploadedDocument } from '../types';
-import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf'; // npm install pdfjs-dist
+
+import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf';
+import workerSrc from 'pdfjs-dist/legacy/build/pdf.worker.mjs?url';
+
+pdfjsLib.GlobalWorkerOptions.workerSrc = workerSrc;
+
+// ... your pdfjsLib.getDocument(...) usage here
 
 interface DocumentUploadProps {
   language: 'en' | 'fr' | 'ar';
